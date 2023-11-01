@@ -1,0 +1,12 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	background-color: gray;
+}
+
+
+.vTabletype{
+	padding: 10px;
+	border: 1px solid black; 
+	background-color: white;
+}
