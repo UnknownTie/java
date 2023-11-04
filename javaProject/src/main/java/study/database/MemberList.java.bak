@@ -1,0 +1,38 @@
+package study.database;
+
+import java.io.IOException;
+import java.util.ArrayList;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+@SuppressWarnings("serial")
+@WebServlet("/database/memberList")
+public class MemberList extends HttpServlet {
+	@Override
+	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		LoginDAO dao = new LoginDAO();
+		
+		String id = request.getParameter("id")==null ? "" : request.getParameter("id");
+		String listType ="전체회원리스트";
+		ArrayList<LoginVO> vos;
+		if(id.equals(""))
+			vos = dao.getLoginList();
+		else {
+			vos = dao.getLoginList(id);
+			listType ="개별회원리스트";
+		}
+
+
+		request.setAttribute("vos", vos);
+		request.setAttribute("listType", listType);
+		
+		String viewPage = "/study/database/memberList.jsp";
+		RequestDispatcher dispatcher = request.getRequestDispatcher(viewPage);
+		dispatcher.forward(request, response);
+	}
+}
