@@ -1,0 +1,730 @@
+
+
+
+body{
+	word-break: keep-all; /* 칸이 넘어서서 줄바꿈이 일어나는 경우, 단어 단위로 내린다. */
+}
+
+
+header{ 
+    position: fixed; left: 0; top: 0px;
+    width: 100%;
+    height: 10%;
+    background-color: #111;
+}
+.wrap{position: absolute; top: 50%; transform: translate(0, -50%);}
+
+
+header .wrap{
+    display: flex; gap: 0 30px; flex-wrap:wrap; flex-direction: row; justify-content: space-around;
+    width: 100%;
+}
+.container{
+    display: flex; flex-wrap:wrap; flex-direction: row; justify-content: space-between; 
+    gap: 50px;
+}
+
+.CkOn {
+    background-color: burlywood;
+}
+
+.introduce span{
+}
+
+.viewBox{
+    background-color: #999;
+}
+.Boxhover:hover{
+    background-color: burlywood;
+}
+
+header .login-box{
+    background-color: burlywood;
+    border-radius: 10px;
+    display: inline-block;
+    height: 5vh;
+    text-align: center;
+    line-height: 5vh;
+    width: 5vw;
+    cursor : pointer;
+}
+header .login-box:hover{
+    background-color: #999;
+}
+header .menu-box{
+    color: white;
+    /* position: absolute; right: 5%; top: 50%; transform: translate(0, -50%); */
+    translate: all 0.3s;
+    cursor : pointer;
+}
+
+header .logo{ 
+    background-color: burlywood;
+    border-radius: 10px;
+    display: inline-block;
+    height: 5vh;
+    text-align: center;
+    line-height: 5vh;
+    width: 5vw;
+    cursor : pointer;
+}
+
+.introduce-title{ 
+    background-color: burlywood;
+    border-radius: 10px;
+    display: inline-block;
+    height: 5vh;
+    text-align: center;
+    line-height: 5vh;
+    width: 5vw;
+    cursor : pointer;
+
+}
+.introduce-title:hover{ 
+    background-color: #999;
+}
+
+.menu-box span{
+    display: block;
+    width: 30px; height: 3px;
+    background-color: wheat;
+}
+
+
+.menu-box .menu-line:nth-child(1){margin-top: 40%;}
+.menu-box .menu-line:nth-child(2){margin: 5px 0;}
+
+.menu-box:hover .menu-line {background-color: #999;}
+.menu-box:hover .menu-line:nth-child(1) {transform: translateY(8px) translateX(0px) rotate(45deg);}
+.menu-box:hover .menu-line:nth-child(2) {opacity: 0;}
+.menu-box:hover .menu-line:nth-child(3) {transform: translateY(-8px) translateX(0px) rotate(-45deg);}
+
+main{
+    position: fixed; left: 0; top: 10%;
+    width: 100%;
+    height: 80%;
+    background-color: #aaa;
+}
+
+.title{
+    position: relative;
+    color: #000;
+    left: 50%; transform: translatex(-50%);
+    width: 80%; height: 10%;
+    text-align: center;
+		margin-top: 3vh;
+    height: 5vh;
+    font-size: 3vh;
+    line-height: 5vh;
+}
+
+
+.visual {
+    width: 100%; height: 100%;
+  }
+  
+  .bondSwiper .swiper-slide{
+    border-radius: 15px;
+    background-color: #fff;
+    color: #fff;
+    overflow: hidden;
+  }
+
+    .JoginBox  {
+        /* border: 3px solid black;  */
+        position: relative;
+        top:2%;
+        left: 50%; transform: translatex(-50%);
+        width: 50%; height: 80%;
+        text-align: center;
+    }
+
+    .JoginBox .Join {
+        /* border: 3px solid black;  */
+        position: relative;
+        left: 50%; transform: translatex(-50%);
+        background-color: #999;
+        width: 70%; height: 70%;
+        margin: 2% 0;
+        padding: 3% 5%;
+        text-align: center;
+    }
+
+
+    .JoginBox input[type=text] ,
+    .JoginBox input[type=password] {
+        position: relative;
+        display: inline-block;
+        width: 80%; height: 2vh;
+        margin: 1% 0;
+    }
+    
+    .JoginBox  input[type=button] {
+        position: relative;
+        color: #fff;
+        background-color: #222;
+        width: 80%; height: 5vh;
+        margin-top: 1vh;
+        text-align: center;
+    }
+    .JoginBox  input[type=button]:hover {
+        background-color: burlywood;
+    }
+
+    /*  */
+    .LoginBox {
+        position: relative;
+        top:2%;
+        left: 50%; transform: translatex(-50%);
+        width: 50%; height: 90%;
+        text-align: center;
+    }
+
+    .LoginBox .logo {
+        background-image: url(../images/common/Logo.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 100% auto ;
+        position: relative;
+        margin: 2% 0;
+        left: 50%; transform: translatex(-50%);
+        width: 50%; height: 35%;
+        text-align: center;
+    }
+
+    .LoginBox .login {
+        position: relative;
+        left: 50%; transform: translatex(-50%);
+        background-color: #999;
+        width: 40%; height: 50%;
+        margin: 2% 0;
+        padding: 5%;
+        text-align: center;
+    }
+
+    .LoginBox input[type=text] ,
+    .LoginBox input[type=password] {
+        position: relative;
+        display: inline-block;
+        width: 80%; height: 3vh;
+        margin: 2% 0;
+    }
+    
+    .LoginBox input[type=button] {
+        position: relative;
+        background-color: #444;
+        color: #fff;
+        width: 40%; height: 5vh;
+        margin: 1% 0;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .LoginBox input[type=button]:hover {
+        background-color: burlywood;
+    }
+
+    .LoginBox input[type=submit]{
+        position: relative;
+        background-color: #222;
+        color: #fff;
+        width: 82%; height: 5vh;
+        margin-top: 4% ;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .LoginBox input[type=submit]:hover{
+        background-color: burlywood;
+    }
+
+    .visual .slide .ProductBox{
+        float: left;
+        border: 3px solid black; 
+        position: relative; 
+        margin-left: 5%;
+        top:10%; height: 70%;
+        left: 2%; width: 25%;
+        cursor: pointer;
+        }
+
+
+    .visual .slide .ProductBox .title{
+
+            position: relative; 
+            top:5%;  
+            left: 50%; transform: translatex(-50%);
+            width: 70%; height: 10%; 
+            background-color: #222;
+            color: #fff;
+        }
+        .visual .slide .ProductBox .desc{
+            /* border: 3px solid black;  */
+            position: relative; 
+            padding: 2% 2%;
+            top:5%; 
+            left: 50%; transform: translatex(-50%);
+            width: 66%; height: 11%; 
+            background-color: #666;
+            color: #fff;
+        }
+        .visual .slide .ProductBox .photo{
+            /* border: 3px solid black;  */
+            position: relative; 
+            top:8%; 
+            left: 50%; transform: translatex(-50%);
+            width: 70%; height: 55%; 
+            background-color: #eee;
+        }
+
+
+
+    .visual .slide .DeviceListBox{
+        float: left;
+        /* border: 3px solid black;  */
+        position: relative; 
+        padding: 1%;
+        margin-right: 6%;
+        top:2%; height: 80%;
+        left: 5%; width: 40%; 
+        /* background-color: #666; */
+        }
+
+    .visual .slide .DeviceListBox .top{
+        /* border: 3px solid black;  */
+        position: relative;
+        left: 50%; transform: translatex(-50%);
+        padding-left: 5%; 
+        width: 95%; height: 8%;
+        }
+    .visual .slide .DeviceListBox .top .ChangeBtn{
+        /* border: 3px solid black;  */
+        position: relative;
+        background-color: #222;
+        color: #fff;
+        width: 30%; height: 90%;
+        cursor: pointer;
+        }
+    .visual .slide .DeviceListBox .top .ChangeBtn:hover{
+        background-color: burlywood;
+        }
+
+    .visual .slide .DeviceListBox .center{
+        /* border: 3px solid black;  */
+        position: relative;
+        left: 50%; transform: translatex(-50%);
+        width: 100%; height: 50%;
+        }
+
+    .visual .slide .DeviceListBox .center .photo{
+        /* border: 3px solid black;  */
+        position: relative;
+        left: 50%; transform: translatex(-50%);
+        width: 90%; height: 80%; 
+        background-color: #eee;
+        }
+
+    .visual .slide .DeviceListBox .center .photo .btnL{
+        /* border: 3px solid black;  */
+        position: fixed;
+        bottom: 0;
+        padding-top: 1%;
+        width: 50%; height: 10%; 
+        background-color: #666;
+
+        text-align: center;
+        }
+    .visual .slide .DeviceListBox .center .photo .btnR{
+        /* border: 3px solid black;  */
+        position: fixed;
+        bottom: 0; right: 0;
+        padding-top: 1%;
+        width: 50%; height: 10%; 
+        background-color: #666;
+        text-align: center;
+        }
+    .visual .slide .DeviceListBox .center table{
+        /* border: 3px solid black;  */
+        position: absolute;
+        left: 50%; transform: translatex(-50%);
+        width: 90%; height: 3vh;
+        text-align: center;
+        padding: auto ;
+        }
+    .visual .slide .DeviceListBox .center table td{
+        color: #fff;
+        vertical-align: middle;
+        }
+    .visual .slide .DeviceListBox .center table td:nth-child(n+1):nth-child(-n+2){
+        background-color: #d22;
+        }
+    .visual .slide .DeviceListBox .center table td:nth-child(n+3):nth-child(-n+4){
+        background-color: #22d;
+        }
+    .visual .slide .DeviceListBox .center table td:nth-child(n+5){
+        background-color: #2d2;
+        }
+    .visual .slide .DeviceListBox .center table td:nth-child(n+6):nth-child(-n+8){
+        background-color: #444;
+        }
+
+    .visual .slide .DeviceListBox .bottom{
+        /* border: 3px solid black;  */
+        position: relative;
+        left: 50%; transform: translatex(-50%);
+
+        width: 100%; height: 40%;
+        text-align: center;
+        
+        }
+
+    .visual .slide .DeviceListBox .chartView{
+        /* border: 3px solid black;  */
+            position: relative;
+            left: 50%; top: 50%;
+            transform: translate(-50% ,-50%);
+            background-color: #eee;
+            width: 90%; height: 100%;
+            text-align: center;
+        
+        }
+
+
+    .visual .slide .DeviceBox {
+            /* border: 2px solid black;  */
+            position: relative;
+            /* background-color: #999; */
+            padding: 0.3% ;
+            top: 1%;
+            left: 50%; transform: translatex(-50%);
+            width: 85%; height: 90%;
+            text-align: center;
+        }
+
+    .visual .slide .DeviceBox .contents{
+        /* border: 1px solid black;  */
+        position: relative;
+        display: flex;
+        width: 50%; height: 100%;
+        text-align: center;
+    }
+
+    .visual .slide .DeviceBox .top{
+        /* border: 1px solid black;  */
+        position: relative;
+        left: 50%; transform: translatex(-50%);
+        display: flex;
+        width: 100%; height: 40%;
+        text-align: center;
+    }
+
+    .visual .slide .DeviceBox .top .photo{
+        /* border: 1px solid black;  */
+        position: relative;
+        margin: 0% 1%;
+        background-color: #eee;
+        width: 78%; height: 98%;
+				vertical-align: middle;        
+    }
+    .visual .slide .DeviceBox .top .photo img{
+        /* border: 1px solid black;  */
+        width: auto; height: 100%;
+    }
+    .visual .slide .DeviceBox .top .descT{
+        /* border: 1px solid black;  */
+        padding :2%;
+        position: absolute;
+        right: 0; top: 0%;
+        background-color: gray;
+        width: 16%; height: 44%;
+        text-align: center;
+    }
+    .visual .slide .DeviceBox .top .desc .btnA{
+        /* border: 1px solid black;  */
+        background-color: #222;
+        color:#eee;
+        font-size:20px;
+        line-height:40px;
+   
+        width: 100%; height: 20%;
+        text-align: center;
+    }
+    .visual .slide .DeviceBox .top .desc .btnA:hover{
+        /* border: 1px solid black;  */
+        background-color: burlywood;
+        width: 100%; height: 20%;
+
+        text-align: center;
+    }
+
+    .visual .slide .DeviceBox .dayView{
+
+        position: relative;
+        /*background-color: chocolate;*/
+        width: 70%; height: 100%;
+        text-align: center;
+    }
+    .visual .slide .DeviceBox .dayView .Month{
+
+			background-color:#999;
+			margin-top:1%;
+			font-size:2vh;
+			line-height:2vh;
+			vertical-align:middle;
+			width: 99%; height: 10%;
+    }
+    
+    .visual .slide .DeviceBox .dayView table{
+			
+			background-color:#444;
+			border: 1px solid black;
+			text-align: center;
+			margin-top:1%;
+			right:0px;
+			width: 100%; height: 85%;
+    }
+        .visual .slide .DeviceBox .top .dayView table th{
+			border: 1px solid black;
+			background-color:#222;
+			color:#ddd;
+
+    }
+    .visual .slide .DeviceBox .top .dayView table td , th{
+			border: 1px solid black;
+			background-color:#666;
+			border: 1px solid black;
+
+    }
+       
+    
+    .visual .slide .DeviceBox .dayView .weekDay{
+
+
+    }
+    .visual .slide .DeviceBox .desc{
+        position: relative;
+        display: flex;
+        background-color: gray;
+        width: 30%; height: 100%;
+        text-align: center;
+    }
+		.visual .slide .DeviceBox .desc .memo {
+    position: relative;
+    display: flex;
+    left: 50%; top:2%;
+    transform: translatex(-50% );
+    width: 95%; height: 95%;
+    text-align: center;
+    padding:1%;
+}
+		.visual .slide .DeviceBox .desc .memo .memoDay{
+   	position:absolute;
+	  display: inline-block;
+    background-color: #daa;
+		right: 0%; top:0%;
+		height: 15%;
+	  line-height: 4vh;
+    width: 100%; 
+    text-align: center;
+}
+		.visual .slide .DeviceBox .desc .memo .memoBox{
+   	position:absolute;
+    background-color: #ddd;
+		resize: none;
+		right: 0%; top:15%;
+    width: 100%; height: 70%;
+
+}
+  .visual .slide .DeviceBox .desc .memo .periodBtn{
+	  /* border: 1px solid black;  */
+	  position: absolute;
+	  display: inline-block;
+	  background-color: #222;
+	  color: #fff;
+		right: 0%; top:85%;
+	  width: 100%; height: 15%;
+	  line-height: 4vh;
+	  text-align: center;
+	  cursor: pointer;
+  }
+  .visual .slide .DeviceBox .desc .periodBtn{
+	  /* border: 1px solid black;  */
+	  position: relative;
+	  display: inline-block;
+	  background-color: #222;
+	  color: #fff;
+	  margin: 1% 1%;
+	  top:85%; right:70%;
+	  width: 50%; height: 5vh;
+	  line-height: 5vh;
+	  text-align: center;
+	  cursor: pointer;
+  }
+
+  .visual .slide .DeviceBox .desc .periodBtn:hover{
+ 		background-color: burlywood;
+  }      
+  
+    .visual .slide .DeviceBox .center{
+
+        position: relative;
+        left: 50%; transform: translatex(-50%);
+        display: flex;
+        width: 100%; height: 10%;
+        text-align: center;
+    }
+    
+    .visual .slide .DeviceBox .center table{
+        position: absolute;
+        left: 50%; transform: translatex(-50%);
+        width: 100%; height: 100%;
+        text-align: center;
+
+        }
+
+    .visual .slide .DeviceBox .center table td{
+				vertical-align: middle;
+				text-align: center;
+        color: #fff;
+
+        }
+    .visual .slide .DeviceBox .center table td:nth-child(n+1):nth-child(-n+2){
+        background-color: #d22;
+        }
+    .visual .slide .DeviceBox .center table td:nth-child(n+3):nth-child(-n+4){
+        background-color: #22d;
+        }
+    .visual .slide .DeviceBox .center table td:nth-child(n+5){
+        background-color: #2d2;
+        }
+    .visual .slide .DeviceBox .center table td:nth-child(n+6):nth-child(-n+8){
+        background-color: #444;
+        }
+
+    .visual .slide .DeviceBox .center .periodBtn{
+        /* border: 1px solid black;  */
+        position: relative;
+        display: inline-block;
+        background-color: #222;
+        color: #fff;
+        margin: 1% 1%;
+        width: 23%; height: 5vh;
+        line-height: 5vh;
+        text-align: center;
+        cursor: pointer;
+        }
+
+    .visual .slide .DeviceBox .center .periodBtn:hover{
+        background-color: burlywood;
+        }    
+    .visual .slide .DeviceBox .bottom{
+        /* border: 1px solid black;  */
+        position: relative;
+        left: 50%; transform: translatex(-50%);
+        bottom: 0;
+        display: flex;
+        width: 100%; height: 50%;
+        text-align: center;
+        
+        }
+
+    .visual .slide .DeviceBox .bottom .chartView{
+        border: 1px solid black; 
+        position: relative;
+        left: 50%; top: 50%;
+        transform: translate(-50% ,-50%);
+        background-color: #ddd;
+        width: 99%; height: 99%;
+        text-align: center;    
+    }
+    
+    .visual .slide .DeviceBox .bottom .chartView table{
+        border: 1px solid black; 
+        position: relative;
+        left: 50%; top: 5%;
+        transform: translatex(-50%);
+        width: 99%; height: 80%;
+        text-align: center;
+        vertical-align: middle;
+        background-color:#999;
+    }
+    
+   .visual .slide .DeviceBox .bottom .chartView table tr:first-child{
+			background-color: #222;
+			color: #eee;  
+			vertical-align: middle;  
+    }
+    
+    .visual .slide .DeviceBox .bottom .chartView table tr,td{
+        border: 1px solid black; 
+				vertical-align: middle;
+    }
+
+    .visual .slide .DeviceBox .bottom .chartView table tr,td{
+        border: 1px solid black; 
+				vertical-align: middle;
+    }
+
+    .visual .swiper-pagination-bullet{
+        background-color: #fff;
+    }
+    .visual .swiper-button-next {color: #fff;}
+    .visual .swiper-button-prev {color: #fff;}
+
+    .swiper-pagination-bullet{
+     	width:30px !important;
+      height:30px !important;
+      line-height: 30px;
+    }
+	
+	.swiper-pagination{
+	    counter-reset: number 0;
+	}
+	.swiper-pagination-bullet::after{
+	    counter-increment: number 1;
+	    content:counter(number);
+	}
+
+  .swiper .swiper-wrapper .slide .DeviceBox .top .contents 
+  .dayView table td a:link{
+		color:#eee;
+   	text-decoration: none;
+  }
+  
+    .swiper .swiper-wrapper .slide .DeviceBox .top .contents 
+  .dayView table td a:link:hover{
+		color:#22f;
+		text-decoration: underline;
+		font-weight: bolder;
+  }
+  
+    .swiper .swiper-wrapper .slide .DeviceBox .bottom a:link{
+		color:#000;
+   	text-decoration: none;
+  }
+  
+    .swiper .swiper-wrapper .slide .DeviceBox .bottom a:link:hover{
+		color:#22f;
+		text-decoration: underline;
+		font-weight: bolder;
+  }
+
+    .swiper .swiper-wrapper .slide .DeviceBox .bottom .chartView .currentPageA{
+		color:#f22;
+		text-decoration: underline;
+		font-weight: bolder;
+  }
+  
+footer{
+    position: fixed; left: 0; bottom:0;
+    width: 100%;
+    height: 10%;
+    background-color: #111;
+    color: white;
+}
+
+footer .wrap{left: 50%; transform: translatex(-50%);}
+
+.linkA:hover{
+		color:#f22; !important;
+}
